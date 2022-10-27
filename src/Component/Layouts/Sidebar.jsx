@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 function Sidebar() {
   return (
     <div className="sidebar">
@@ -7,15 +7,14 @@ function Sidebar() {
         <img src="Assests/safuu-logo.png" alt="" width={"50%"} />
       </div>
       <div className="slider-menu">
-        <a className="d1 px-3" href="/" >
+        <Link className="d1 px-3" to="/dashboard" >
           <img src="Assests/d1.png" alt="" width={"13%"} />
-
           &nbsp; &nbsp; Dashboard
-        </a>
-        <a className="d1 active px-3 mt-4" href="/">
+        </Link>
+        <Link className="d1 active px-3 mt-4" type="button"  to="/account">
           <img src="Assests/account.png" alt="" width={"13%"} />
           &nbsp; &nbsp; Account
-        </a>
+        </Link>
         <a className="d1 px-3 mt-4" href="/">
           <img src="Assests/swap.png" alt="" width={"13%"} />
           &nbsp; &nbsp; Swap

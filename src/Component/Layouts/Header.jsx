@@ -1,11 +1,57 @@
 import React from "react";
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Offcanvas from "react-bootstrap/Offcanvas";
 import {AiOutlineTwitter} from 'react-icons/ai'
 import {FaDiscord} from 'react-icons/fa'
 import {FaTelegramPlane} from 'react-icons/fa'
 import {SiMedium} from 'react-icons/si'
+import { Link } from "react-router-dom";
 function Header() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div>
+     <div className="canvas">
+     <Button className="c-btn"
+          variant="primary" onClick={handleShow}>
+       Home
+      </Button>
+      <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>
+          <img src="Assests/safuu-logo.png" alt="" width={"50%"} />
+          </Offcanvas.Title>
+        </Offcanvas.Header>
+        {/* <Offcanvas.Body>
+        </Offcanvas.Body> */}
+          <div className="slider-menu">
+        <Link className="d1 px-3" to="/dashboard" >
+          <img src="Assests/d1.png" alt="" width={"13%"} />
+
+          &nbsp; &nbsp; Dashboard
+        </Link>
+        <a className="d1 active px-3 mt-4" href="/">
+          <img src="Assests/account.png" alt="" width={"13%"} />
+          &nbsp; &nbsp; Account
+        </a>
+        <a className="d1 px-3 mt-4" href="/">
+          <img src="Assests/swap.png" alt="" width={"13%"} />
+          &nbsp; &nbsp; Swap
+        </a>
+        <a className="d1 px-3 mt-4" href="/">
+          <img src="Assests/calculator.png" alt="" width={"13%"} />
+          &nbsp; &nbsp; Calculator
+        </a>
+        <a className="d1 px-3 mt-4" href="/">
+          <img src="Assests/analytics.png" alt="" width={"13%"} />
+          &nbsp; &nbsp; Analytics
+        </a>
+      </div>
+      </Offcanvas>
+     </div>
+     
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
           <a className="navbar-brand" href="/">
