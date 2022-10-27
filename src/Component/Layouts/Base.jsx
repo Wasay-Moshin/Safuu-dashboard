@@ -4,8 +4,7 @@ import Sidebar from "./Sidebar";
 function Base(props) {
   return (
     <div>
-
-      <Header />
+<Header />
       <div ps={["unset", "unset", "4"]} display="flex">
         <Sidebar />
         <div

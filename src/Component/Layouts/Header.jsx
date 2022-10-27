@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
-import Offcanvas from "react-bootstrap/Offcanvas";
+// import Offcanvas from "react-bootstrap/Offcanvas";
 import {AiOutlineTwitter} from 'react-icons/ai'
 import {FaDiscord} from 'react-icons/fa'
 import {FaTelegramPlane} from 'react-icons/fa'
@@ -13,7 +13,7 @@ function Header() {
   const handleShow = () => setShow(true);
   return (
     <div>
-     <div className="canvas">
+     {/* <div className="canvas">
      <Button className="c-btn"
           variant="primary" onClick={handleShow}>
        Home
@@ -24,8 +24,6 @@ function Header() {
           <img src="Assests/safuu-logo.png" alt="" width={"50%"} />
           </Offcanvas.Title>
         </Offcanvas.Header>
-        {/* <Offcanvas.Body>
-        </Offcanvas.Body> */}
           <div className="slider-menu">
         <Link className="d1 px-3" to="/dashboard" >
           <img src="Assests/d1.png" alt="" width={"13%"} />
@@ -50,7 +48,7 @@ function Header() {
         </a>
       </div>
       </Offcanvas>
-     </div>
+     </div> */}
      
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
