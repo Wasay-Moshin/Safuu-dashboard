@@ -16,8 +16,7 @@ body {
 @media screen and (max-width: 600px) {
   .canvas {
     display: block;
-    margin: 0 auto;   
-      
+    margin: 0 auto;
   }
 }
 .canvas {
@@ -131,22 +130,23 @@ body {
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  // width: 100%;
+  width: 100%;
   margin: auto;
+  height: 100%;
+
   .card {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 450px;
     backdrop-filter: blur(10px);
     width: 100%;
     border: 1px solid #114e13;
     border-radius: 10px;
-    padding: 15px 0;
     background: transparent;
     margin-bottom: 20px;
+    overflow: hidden;
   }
   .card2 {
     height: 100%;
@@ -154,7 +154,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 450px;
     backdrop-filter: blur(10px);
     width: 100%;
     border: none;
@@ -163,6 +162,7 @@ body {
     padding: 15px 0;
     background: transparent;
     margin-bottom: 20px;
+    overflow: hidden;
   }
   h2 {
     font-size: 25px;
@@ -174,7 +174,7 @@ body {
     font-size: 20px;
   }
 }
-.account{
+.account {
   padding-bottom: 30px;
   padding-top: 180px;
   display: flex;
@@ -185,11 +185,11 @@ body {
   width: 100%;
   margin: auto;
   height: 100%;
-   .card{ display: flex;
+  .card-1 {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // margin-left: 450px;
     backdrop-filter: blur(10px);
     width: 100%;
     border: 1px solid #114e13;
@@ -197,14 +197,234 @@ body {
     padding: 15px 0;
     background: transparent;
     margin-bottom: 20px;
-   }
+  }
+  .card-2 {
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    border: 1px solid #114e13;
+    border-radius: 10px;
+    padding: 10px;
+    background: transparent;
+  }
+  h2 {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+  }
+  strong {
+    color: #34c439;
+    font-size: 30px;
+  }
 }
-.c-btn{
+.swap {
+  padding-bottom: 30px;
+  padding-top: 180px;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  .card {
+    position: relative;
+    border: 3px solid #114e13;
+    border-radius: 24px;
+    max-width: 455px;
+    width: 100%;
+    padding: 3px;
+    background-color: #010901;
+  }
+  .content {
+    position: relative;
+    z-index: 2;
+    padding: 24px 25px 30px;
+    h4 {
+      color: white;
+    }
+    h6 {
+      color: white;
+    }
+  }
+  .input-box {
+    border-color: #16172e;
+    border-radius: 16px;
+    background: linear-gradient(
+      95.13deg,
+      rgba(22, 24, 48, 0.25),
+      rgba(46, 51, 92, 0.25)
+    );
+    box-shadow: 5px 5px 7px -5px #000;
+    padding: 10px 16px 20px;
+  }
+  p {
+    color: white;
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+  }
+  .input-section {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  input {
+    color: #d0dce8;
+    width: 0;
+    position: relative;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    flex: 1 1 auto;
+    background-color: transparent;
+    font-size: 16px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0;
+  }
+  .btn-danger {
+    background: transparent;
+    border: none;
+  }
+  .btn-danger:hover {
+    background: transparent;
+  }
+  .dropdown-menu {
+    background-color: black;
+  }
+  .dropdown-item {
+    background-color: black;
+    color: white;
+  }
+  .exchange-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px auto;
+  }
+  .status {
+    p {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+  }
+  .swap-btn {
+    border-radius: 2px;
+    background: linear-gradient(90deg, #024b05, #36d33b);
+    box-shadow: 0 0 5px 0 #36d63b;
+    border: 2px solid #36d63b;
+    padding: 13px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: 9px;
+  }
+  .swap-details {
+    margin-top: 16px;
+    padding: 16px 12px;
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(
+      95.13deg,
+      rgba(22, 24, 48, 0.25),
+      rgba(46, 51, 92, 0.25)
+    );
+    p {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+.analytic {
+  padding-bottom: 30px;
+  padding-top: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  .card-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    border: 1px solid #114e13;
+    border-radius: 10px;
+    padding: 15px 0;
+    background: transparent;
+    margin-bottom: 20px;
+  }
+  .card-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    border: 1px solid #114e13;
+    border-radius: 10px;
+    padding: 10px;
+    background: transparent;
+  }
+  h2 {
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+  }
+  .c-value {
+    width: 80%;
+    font-size: 25px;
+    font-weight: 800;
+    border-radius: 2px;
+    box-shadow: 0 0 1px 0 #36d63b;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 5px;
+    background: linear-gradient(90deg, #024b05, #36d33b);
+  }
+  .t-btn {
+    box-shadow: 0 0 1px 0 #36d63b;
+    border: 1px solid #36d63b;
+    border-radius: 10px;
+    color: #34c439;
+    padding: 13px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 40%;
+  }
+  .threads {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 90px;
+    overflow: hidden;
+    th {
+      color: #34c439;
+    }
+  }
+}
+.c-btn {
   margin: 20px;
   background-color: #34c439;
-
 }
-.offcanvas{
+.offcanvas {
   padding-top: 60px;
   width: 80%;
   height: 100vh;

@@ -15,18 +15,18 @@ function Sidebar() {
           <img src="Assests/account.png" alt="" width={"13%"} />
           &nbsp; &nbsp; Account
         </Link>
-        <a className="d1 px-3 mt-4" href="/">
+        <Link className="d1 px-3 mt-4" to="/swap">
           <img src="Assests/swap.png" alt="" width={"13%"} />
           &nbsp; &nbsp; Swap
-        </a>
-        <a className="d1 px-3 mt-4" href="/">
+        </Link>
+        <Link className="d1 px-3 mt-4" to="/cal">
           <img src="Assests/calculator.png" alt="" width={"13%"} />
           &nbsp; &nbsp; Calculator
-        </a>
-        <a className="d1 px-3 mt-4" href="/">
+        </Link>
+        <Link className="d1 px-3 mt-4" to="/analytic">
           <img src="Assests/analytics.png" alt="" width={"13%"} />
           &nbsp; &nbsp; Analytics
-        </a>
+        </Link>
       </div>
     </div>
   );
