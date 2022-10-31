@@ -8,9 +8,9 @@ import Calculator from "./Pages/Calculator";
 import Analytics from "./Pages/Analytics";
 import Base from "./Component/Layouts/Base";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init({duration:900})
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({ duration: 900 });
 function App() {
   return (
     <div>
@@ -18,11 +18,11 @@ function App() {
         <BrowserRouter>
           <Base>
             <Routes>
-              <Route  path="/dashboard" element={<Dashboard />} />
-              <Route  path="/account" element={<Account/>} />
-              <Route  path="/swap" element={<Swap/>} />
-              <Route  path="/cal" element={<Calculator/>} />
-              <Route  path="/analytic" element={<Analytics/>} />
+              <Route index path="/dashboard" element={<Dashboard />} />
+              <Route index path="/account" element={<Account />} />
+              <Route index path="/swap" element={<Swap />} />
+              <Route index path="/cal" element={<Calculator />} />
+              <Route index path="/analytic" element={<Analytics />} />
             </Routes>
           </Base>
         </BrowserRouter>

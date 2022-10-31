@@ -15,12 +15,11 @@ body {
 
 @media screen and (max-width: 600px) {
   .canvas {
-    display: block;
-    margin: 0 auto;
+    display: block !important;
   }
 }
 .canvas {
-  display: block;
+  display: none;
 }
 .navbar {
   padding: 30px 0;
@@ -420,10 +419,69 @@ body {
     }
   }
 }
+@media screen and (max-width: 600px) {
+  .cal{
+    .initial{
+      h5{
+         font-size: medium;
+      }
+    }
+    .price{
+      display: flex;
+      flex-direction: column;
+    }
+    .max{
+      display: flex;
+      flex-direction: column;
+    }
+    .card2{
+      width: 210px !important;
+      h5{
+        font-size: medium !important;
+      }
+    }
+    .amount{
+      width: 65px;
+    }
+  }
+}
+.cal{
+  padding-top: 130px;
+  .slide2{
+    width : 240px !important;
+    color: grey !important;
+  }
+  .card1{
+    background-color: transparent!important;
+    color: white !important;
+    border-color: #07DE0F !important;
+    border-radius: 15px !important;
+  }
+  .card2{
+    background-color: rgba(46,51,92,.25) !important;
+    border-color: #16172E;
+    color: white !important;
+  }
+  .price{
+    color: hsla(0,0%,100%,.6);
+  }
+  .amount{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+  }
+ 
+}
 .c-btn {
   margin: 20px;
-  background-color: #34c439;
+  background-color:#34c439; 
+  border:none;
+  .c-btn:hover{
+    background-color:#34c439; 
+  }
 }
+
 .offcanvas {
   padding-top: 60px;
   width: 80%;
